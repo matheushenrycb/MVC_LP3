@@ -1,6 +1,11 @@
 package Mapeamento;
 
 //import javax.persistence.Entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 //import javax.persistence.GeneratedValue;
 //import javax.persistence.Id;
 
@@ -8,11 +13,11 @@ package Mapeamento;
  *
  * @author laboratorio
  */
-//@Entity
+@Entity
 public class Professor extends Funcionario {
 
-    //@Id
-    //@GeneratedValue
+    @Id
+    @GeneratedValue
     private long id;
     private String materia;
     

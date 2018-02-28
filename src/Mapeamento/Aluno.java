@@ -7,17 +7,20 @@ package Mapeamento;
 
 
 import Mapeamento.Pessoa;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 
 /**
  *
  * @author laboratorio
  */
-//@Entity
+@Entity
 public class Aluno extends Pessoa {
 
-  //  @Id
-   // @GeneratedValue
+    @Id
+    @GeneratedValue
     private long id;
     private int semestre;
     private String turno;

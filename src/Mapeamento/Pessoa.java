@@ -7,11 +7,14 @@ package Mapeamento;
 
 //import javax.persistence.MappedSuperclass;
 
+import javax.persistence.MappedSuperclass;
+
+
 /**
  *
  * @author laboratorio
  */
-//@MappedSuperclass
+@MappedSuperclass
 public abstract class Pessoa {
 
     private String nome;
