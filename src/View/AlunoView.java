@@ -5,6 +5,7 @@
  */
 package View;
 
+import Controller.AlunoController;
 import Mapeamento.Aluno;
 import javax.swing.JOptionPane;
 
@@ -24,7 +25,8 @@ public class AlunoView {
         alu.setIdade(Integer.parseInt(idade));
         alu.setSemestre(Integer.parseInt(semestre));
         alu.setTurno(turno);
-
+        AlunoController alc=new AlunoController();
+        alc.cadastrar(alu);
     }
 
     public void cadastroSucesso() {

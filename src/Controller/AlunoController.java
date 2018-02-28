@@ -20,7 +20,8 @@ public class AlunoController {
 
     public void cadastrar(Aluno aluno) {
         AlunoModelo alm=new AlunoModelo();
-        alm.cadastrar(/*aluno*/);
+        alm.cadastrar(aluno);
+        
     }
 //        Aluno alu = new Aluno();
 //        String nome = JOptionPane.showInputDialog("Insira o nome do Aluno:");

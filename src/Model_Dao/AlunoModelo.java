@@ -7,6 +7,9 @@ package Model_Dao;
 
 import Mapeamento.Aluno;
 import Mapeamento.HibernateUtil;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 /**
  *
@@ -22,5 +25,6 @@ public class AlunoModelo {
         tr.commit();// ira executar o que pediu
         secao.close();
         sf.close();
+        
     }
 }
