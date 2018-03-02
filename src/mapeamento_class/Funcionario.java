@@ -3,12 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Mapeamento;
+package mapeamento_class;
 
+public abstract class Funcionario extends Pessoa {
 
-public abstract class Funcionario extends Pessoa{
     private float salario;
-    
 
     public float getSalario() {
         return salario;
@@ -18,8 +17,4 @@ public abstract class Funcionario extends Pessoa{
         this.salario = salario;
     }
 
-   
-
-    
-   
-  }
+}

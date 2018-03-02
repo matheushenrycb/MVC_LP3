@@ -3,14 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Mapeamento;
+package mapeamento_class;
 
-
-import Mapeamento.Pessoa;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
 
 /**
  *
@@ -24,15 +21,13 @@ public class Aluno extends Pessoa {
     private long id;
     private int semestre;
     private String turno;
-    
 
-    
 //   public int calculaDtNasciemto(int ano) {
 //        return ano - getIdade();
 //    }
     public Aluno() {
     }
-   
+
     public int getSemestre() {
         return semestre;
     }

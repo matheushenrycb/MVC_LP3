@@ -1,14 +1,12 @@
-package Mapeamento;
+package mapeamento_class;
 
 //import javax.persistence.Entity;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 //import javax.persistence.GeneratedValue;
 //import javax.persistence.Id;
-
 /**
  *
  * @author laboratorio
@@ -20,7 +18,6 @@ public class Professor extends Funcionario {
     @GeneratedValue
     private long id;
     private String materia;
-    
 
     public long getId() {
         return id;
@@ -29,7 +26,6 @@ public class Professor extends Funcionario {
     public void setId(long id) {
         this.id = id;
     }
-   
 
     public int calculaDtNasciemto(int ano) {
         return ano - getIdade();

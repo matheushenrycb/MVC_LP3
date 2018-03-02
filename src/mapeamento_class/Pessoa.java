@@ -3,24 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Mapeamento;
+package mapeamento_class;
 
 //import javax.persistence.MappedSuperclass;
-
 import javax.persistence.MappedSuperclass;
-
+import javax.persistence.Transient;
 
 /**
  *
- * @author laboratorio
+ * @author Matheus Henry
  */
 @MappedSuperclass
 public abstract class Pessoa {
 
     private String nome;
     private int idade;
+    @Transient
     private String sexo;
-    
 
     public String getNome() {
         return nome;

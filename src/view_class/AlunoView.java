@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package view_class;
 
-import Controller.AlunoController;
-import Mapeamento.Aluno;
+import controlle_rclass.AlunoController;
+import mapeamento_class.Aluno;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class AlunoView {
 
-    public void Cadastrar() {
+    public void cadastrarAl() {
         Aluno alu = new Aluno();
         String nome = JOptionPane.showInputDialog("Insira o nome do Aluno:");
         String idade = JOptionPane.showInputDialog("Insira o Idade do Aluno:");
@@ -25,15 +25,15 @@ public class AlunoView {
         alu.setIdade(Integer.parseInt(idade));
         alu.setSemestre(Integer.parseInt(semestre));
         alu.setTurno(turno);
-        AlunoController alc=new AlunoController();
+        AlunoController alc = new AlunoController();
         alc.cadastrar(alu);
     }
 
     public void cadastroSucesso() {
-        
+        JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");
     }
 
     public void cadastroErro() {
-
+        JOptionPane.showMessageDialog(null, "Houve algum erro!!! Por favor digite novamente");
     }
 }

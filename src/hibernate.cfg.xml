@@ -46,6 +46,7 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/teste_mvc?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
-    <mapping class="Mapeamento.Aluno"/>
+    <mapping class="mapeamento_class.Aluno"/>
+    <mapping class="mapeamento_class.Professor"/>
   </session-factory>
 </hibernate-configuration>
